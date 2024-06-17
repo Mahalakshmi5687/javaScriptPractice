@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        .subscribe-button{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 30px
+        }
+        .is-subscribed{
+            background-color: rgb(240,240,240);
+            color: black;
+        }
+        .cost-input{
+            font-size: 15px;
+            padding:10px 
+        }
+        .calculate-button{
+            font-size:15px;
+            padding: 12px 15px;
+            color:white;
+            background-color: green;
+            border: none;
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+    <p>YouTube Subscribe Button</p>
+    <button class ="js-subscribe-button subscribe-button" onclick="
+     subscribe();
+    
+    ">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input class="js-cost-input cost-input" onkeydown="
+        handleCostKeydown(event);    
+    " placeholder="Cost of order">
+    <button class="calculate-button" onclick="
+        calculateTotal();
+    ">Calculate</button>
+    <p class="js-total-cost"></p>
+    <script>
+        console.log(typeof (String('25')));
+        console.log('25'-5);//this will give 20. this will work but not recommended
+        console.log('25'+5)//this will not work gives 255
+        window.console.log('hi');//window is document page or web page.
+        function handleCostKeydown(event){
+            console.log('typing');
+            console.log(event.key);
+            if(event.key === 'Enter'){
+                calculateTotal();
+            }
+        }
+        function calculateTotal(){
+            const inputElement = document.querySelector('.js-cost-input');
+            let cost = Number(inputElement.value);
+
+            if(cost < 40){
+                cost = cost + 10;
+            }
+            document.querySelector('.js-total-cost')
+             .innerHTML = `$${cost}`;
+        }
+        function subscribe(){
+            const buttonElement = document.querySelector('.js-subscribe-button');
+            //innerText is used to get text in html tags.
+            if(buttonElement.innerText === 'Subscribe'){
+            buttonElement.innerHTML = 'Subscribed';
+            buttonElement.classList.add('is-subscribed');
+            }else{
+            buttonElement.innerHTML = 'Subscribe';
+            buttonElement.classList.remove('is-subscribed');
+            }
+       }
+        
+    </script>
+</body>
+</html>
+<!--
+    -clicks,keydowns => events
+    -onclick, onkeydown => event listeners
+    EVENT LISTENERS
+    HTML                            JAVA SCRIPT
+    onclick                         click
+    onkeydown                       key press
+    on scroll                       scrolling
+    onmouseenter                    hovering over
+    onmouseleave                    stop hovering over
+    .........and many more.
+-->
+<!--In this we learnt about 
+    -Document Object Model (DOM)
+    which allows the javascript to fully control the web pages.
+    -document.querySelector() to get the element in the web page and put them inside the javascript
+    -.innerHTML to modify the html in the element
+    -3 projects using the DOM
+    -onkeydown="" keyboard to be interactive using this
+    -More details about strings and window object
+-->
+<!--HTML elements are javascript objects-->
+<!--.classList = gives us control of the class attribute
+    when we click the button,
+    1. Add a class
+    2. This class will have different styles
+-->

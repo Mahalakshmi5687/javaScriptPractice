@@ -1,0 +1,207 @@
+<!--What is an Object?
+ An Object groups multiple values together
+makes code organized.
+lets us group multiple values together
+let us use multiple values together.
+Bracket Notation: 
+-lets us use properties that don't work with dot notation.-->
+
+<!--***Built-in-Objects*****:
+1.JSON -> -helps us to work with JSON.
+          -JavaScript Object Notation.
+          -a syntax.
+          -similar to JavaScript object.
+          -but has less features.
+          -All properties in JSON must use *double* quotes.
+          -JSON doesnt supports single quotes.
+          -JSON doesn't supports functions as like it supports in javascript object.
+          *** JavaScript object will only makes sense in javascript.
+          *** JSON syntax can be understood by other almost all every programming language.
+          *** JSON syntax is more universal.
+          we use JSON
+          -when we send data between computers.
+          -when we store data.
+         Built-in JSON Object:
+        converts:
+            Javascript Object -> JSON
+
+2.localStorage -> -save values more permanently.
+
+-->
+
+<!--
+
+    null vs undefined.
+    null is an Object type.
+    null = intentionally want something to be empty.
+
+    for example:
+        function func(parameter = 'default'){
+            console.log(parameter);
+        }
+        func();         => 'default' means here we can give default value.
+        func(undefined);  => 'default' means here we also we can give default value.
+
+        func(null);        =>null we cant give default value null means we are giving implicitly that value should be null.
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+ </head>
+ <body>
+    <script>
+        /*const product ={
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+        // accessing and reassigning
+        product.name = 'cotton socks';
+        product.newProperty = 'added';
+        console.log(product);
+        delete product.newProperty;
+        console.log(product);
+        const person ={
+            name: 'John',
+            age:30,
+            gender: 'male',
+        };
+        console.log(Object.keys(person));
+        console.log(Object.values(person));
+        console.log(Object.entries(person));
+        console.log(Object.assign(person));
+        */
+
+        /*const product2 ={
+            name: 'shirt',
+            ['delivery-time']: '1 day',// we can also use the brackets to assign value to property.
+            rating:{
+                stars: 4.5,
+                count: 87
+            },
+            //function inside object = Method
+            fun: function function1(){
+                console.log('function inside object');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);// we cannot use . operator here because script understoods that - is minus.
+        //and we use any variables product2[variable1], product['delivery' + 'time'] that anything that result a value.
+
+        console.log(product2.rating.count);
+        product2.fun();
+        //Example for functions in Object
+        console.log(typeof console);
+        console.log(typeof console.log);
+        //object+function = method
+        console.log(typeof Math);
+        
+        //will converts javascript object to JSON.
+        console.log(JSON.stringify(product2));
+        console.log(typeof JSON.stringify(product2));
+
+        //will converts JSON to javascript object.
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+        console.log(typeof null);
+        */
+         
+        //Auto-boxing:
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        //Auto-boxing will works for every types of ****values*** like ex: numbers and for booleans also.
+
+        //Auto-boxing will not work for :
+        //undefined and null, it through error.
+
+       //Auto-boxing means it will converts to special object we cannot see that, that will be wrapped around.
+      /* javascript automatically wraps a string automatically like a box*/
+
+
+      //Objects are references.
+
+      const object1 ={
+        message: 'hello'
+      };
+      const object2 = object1;
+
+      //eventhough object1 is const object properties can be changed.
+      object1.message = 'Good job!';
+      console.log(object1);
+
+      //eventhough if we change the property of object1 it will be changed for object2 also.
+      console.log(object2);
+
+      //we cannot directly compare Objects.
+      const object3 = {
+        message: 'hello'
+      };
+      console.log(object1 === object3);//false
+      //because objects stored as reference to those values.
+      //here in above we are not checking for values of two objects we are directly comparing objects that may contains different references.
+
+
+      //but if we compare object1 with object object2 it will work.
+      console.log(object2 === object1);//true
+      /* remember while comparing two objects directly it will compares reference of objects not values inside.*/
+
+
+      //shortcuts for Objects.
+      ///first shortcut:
+      const object4 ={
+        message: 'Good job!',
+        price: 234,
+      };
+
+      //if we want to store the values in variables which are in Object and the variables with the same name as like property name of value in Object, then we normally do like this.
+      //const message = object4.message;
+      //but the shortcut is :
+      const {message, price} = object4;// this is called destructuring.
+      console.log(message);
+      console.log(price);//destructuring makes easier way to take properties out of an object.
+      
+      ///Second shortcut:
+      //Shorthand Property.
+
+      const object5 ={
+       // message: message
+       message
+      };
+      console.log(objects);
+
+      //third shortcut:
+      //Shorthand Method.
+      const object6={
+        // method: function function1(){
+        //     console.log('method');
+        // }
+        //shorthand
+        method(){
+            console.log('method');
+        }
+      };
+      console.log(object6);
+      object5.method();
+
+    </script>
+ </body>
+ </html>
+
+
+ <!--
+    Summary of Objects which learnt:
+
+    1. Objects = group related values together.
+    2. Added a score to Rock Paper Scissors.
+    3. Built-in Objects (JSON, localStorage)
+    4. More details (null, auto-boxing, references)
+    5. Shortcuts (destructuring, shorthand property, shorthand method)
+ -->

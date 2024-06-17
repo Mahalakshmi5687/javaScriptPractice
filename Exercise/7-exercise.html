@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+
+    <script>
+        function greet(name){
+            if(!name){
+                console.log(`hi there!`)
+            }
+            else{
+            console.log(`Hello ${name}!`);
+            }
+        }
+        function convertToFahrenheit(celsius){
+            const Fahrenheit = (celsius*(9/5))+32;
+            return Fahrenheit;
+        }
+        console.log(convertToFahrenheit(25));
+        function convertToCelsius(Fahrenheit){
+            const celsius = (Fahrenheit -32)*5/9;
+            return celsius;
+        }
+        console.log(convertToCelsius(86));
+
+        function convertTemperature(degrees, unit)
+        {
+            if(unit === 'C'){
+                return convertToFahrenheit(degrees);
+            }else{
+               return convertToCelsius(degrees);
+            }
+        }
+        console.log(convertTemperature(25, 'C'));
+        console.log(convertTemperature(86, 'F'));
+        greet();
+        greet('Maha');
+        greet('Lakshmi');
+       
+    </script>
+</body>
+</html>

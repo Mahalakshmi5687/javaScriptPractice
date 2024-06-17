@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <button onclick="" class="js-button">Click</button>
+
+    <script>
+        const buttonElement = document.querySelector('.js-button');
+
+        buttonElement.addEventListener('click',() =>{
+            console.log('click2');
+        });
+
+        const eventListener = () => {
+            console.log('click');
+        }
+        buttonElement.addEventListener('click', eventListener);
+
+        buttonElement.removeEventListener('click', eventListener);
+        //advantages of addEventListener:
+        //1.Multiple event Listeners for one event.
+        //2.we can remove an event listener using removeEventListener()
+        //Best practice: Use .addEventListener() instead of onclick=""
+
+          //****functions are values****///
+        //a function without name is called Anonymous function
+        const function1 = function(){
+            console.log('hello2');
+        };
+        //hoisting doesnt works for function1 as this is variable.
+        //hoisting means we can call function before declaration also.
+        console.log(function1);
+        function1();
+
+        const object1 ={
+            num:2,
+            fun: function(){
+                console.log('hello3');
+            }
+        }
+        object1.fun();
+
+        function display(param){
+            console.log(param);
+        }
+        display(2);
+
+        function run(param){
+            param();//passing a function into another function
+        }
+        run(function(){
+            //console.log(2);
+            console.log('hello4');
+        })
+
+
+        setTimeout(function(){
+            console.log('timeout');
+            console.log('timeout2')
+        }, 3000);
+
+        console.log('next line');
+
+        setInterval(function(){//setInternal will runs for each 3 seconds
+            console.log('internal');
+        }, 3000);
+         
+        console.log('next line2');
+
+        // [
+        //     'make dinner',
+        //     'wash dishes',
+        //     'watch youtube'
+        // ].forEach(function(value, index){
+        //     console.log(index);
+        //     console.log(value);
+        // });
+
+        [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ].forEach((value, index) => { // while passing function to another function it is recommended to use arrow function
+            if(value === 'wash dishes'){
+                return; // like continue; if we want to use break in foreach loop it is recommended to use normal forloop because foreach loop doesnt supports break statement.
+            }
+            console.log(index);
+            console.log(value);
+        });
+
+        const regularFunction = function(param, param2) {
+            console.log('hello');
+            return 5;
+        };
+
+        const arrowFunction = (param, param2) =>{
+            console.log('hello');
+            return 5;
+        };
+        arrowFunction();
+
+        const oneParam =param =>{
+            consoel.log(param +1);
+        };
+        oneParam(2);
+
+        const oneLine = () => 2+3;
+        console.log(oneLine());
+
+        // const object2 = {
+        //     method: () =>{
+
+        //     },
+        //     method(){//recommended// shorthand method, readable
+
+        //     }
+        // };
+
+
+        console.log([1, -3, 5].filter((value, index)=>{
+            // if(value >= 0){
+            //     return true;
+            // }
+            // else{
+            //     return false;
+            // }
+            return value >= 0;
+        }));
+
+        console.log([1, 1, 3].map((value, index)=>{
+            return value *2; // creates new array, output: [2, 2, 6]
+        }));
+
+        console.log([1, 1, 3].map(value => value * 2)); //same as above.
+
+        //CLOSURE:
+        //-if a function has access to a value
+        //-it will always have access to that value
+        //-value gets packaged together (enclosed) with the function.
+    </script>
+</body>
+</html>

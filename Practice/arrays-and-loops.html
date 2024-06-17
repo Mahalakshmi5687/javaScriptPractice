@@ -1,0 +1,81 @@
+<!--Arrays:
+    -another type of value
+    -represents a list of values
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    
+    <script>
+        const myArray = [10, 20, 30];
+        console.log(myArray);
+
+        console.log(myArray[1]);
+        myArray[0] = 99;
+        console.log(myArray);
+
+        [1, 'hello', true, {name: 'socks'},[1,2]]
+
+        console.log(typeof [1,2]);
+        console.log(Array.isArray([1,2]));
+
+        console.log(myArray.length);
+        myArray.push(100);
+        console.log(myArray);
+
+        const myArray1 = myArray.splice(0,2);//removes the elements in array within a given range. and can be stored in another array which are removed.
+        console.log(myArray);
+        console.log(myArray1);
+
+
+        //loops
+        let i=1;
+
+        while(i<=5){
+            console.log(i);
+            i = i+1;
+        }
+
+        for (let i=1; i<=5; i++){
+            console.log(i);
+        }
+
+        let randomNumber = 0;
+
+        while(randomNumber < 0.5){
+            randomNumber = Math.random();
+        }
+        console.log(randomNumber);
+
+
+        //looping through an array:
+        const todoList =[
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ];
+        for (let index = 0; index <= todoList.length-1; index++){
+            console.log(todoList[index]);
+            console.log(index);
+        }
+
+        //more details of array
+        const array1 = [1,2,3];
+        const array2 = array1.slice();
+        array2.push(4);
+        console.log(array1);
+        console.log(array2);
+
+        const array3 = [1,2,3];
+        //by destructuring we can directly store array values in variables directly
+        const [firstValue, secondValue] = [1,2,3];
+        
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!--DOM = another built-in object document object.
+-The document object represents/models the webpage.That why we call this as Document Object Model or DOM
+-we can have HTML elements inside JavaScript.
+-The DOM combines JavaScript and HTML together, and gives javascript to control the web page.
+-The HTML element is converted into a JavaScript object when we use HTML in JavaScript.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+
+    <script>
+        //method = function saved inside an object.
+        //document.querySelector()
+        /* -lets us get any element from the page(HTML) and put it inside JavaScript*/
+        //Every HTML element has a property .innerHTML
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button')
+         .innerHTML = 'Changed';
+
+        //HTML elements are javascript objects.
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+
+        /*console.log(document.title);
+        document.title = 'Changed';
+
+        console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>Good job!</button>'
+
+        //document object is linked with web page.
+        /*document.body.innerHTML = 'hello';
+        document.title = 'Good job!';
+        */
+    </script>
+</body>
+</html>

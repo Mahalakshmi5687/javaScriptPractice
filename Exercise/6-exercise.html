@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const d = new Date();
+        const hrs = d.getHours();
+        const name = 'Mahalakshmi'
+        //const hrs = 12;
+        if(hrs >= 6 && hrs <= 12){
+            console.log(`Good morning ${name}!`);
+        }else if(hrs >= 13 && hrs <= 17){
+            console.log(`Good afternoon ${name}!`);
+        }else{
+            console.log(`Good night ${name}!`);
+        }
+        let age = 5;
+        let Holiday = true;
+        if ((age <= 6 || age >= 65) && (Holiday)) {
+            console.log('Discount');
+        } else {
+            console.log('No discount');
+        }
+
+    </script>
+</body>
+</html>

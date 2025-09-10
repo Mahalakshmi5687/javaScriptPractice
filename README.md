@@ -37,3 +37,12 @@ For ex-Chrome uses v8 engine, mozilla firefox uses spider monkey
 javascript was initially created to "make web pages alive".
 
 The programs in this language are called scripts. They can be written right in a web page's HTML and run automatically as the page loads.
+
+What is Node.js
+Installing Node.js
+Running your code with Node.js
+
+What is Node.js?
+Node.js is an open-source, cross-platform, back-end javascript runtime environment that runs on the v8 engine and executes javascript code outside a web browser, which was designed to build scalable network applications, 
+It was  developed by Ryan Dahl and it uses chrome's v8 engine
+Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in javascript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.

@@ -27,3 +27,13 @@ Topics that we will cover-
 7.Functional Programming
 8.Asynchronous JS
 9.Miscellaneous
+
+JavaScript on the Browser?
+Almost Every Browser today is Empowered by javascript,
+
+Every browser has an embedded javascript engine
+For ex-Chrome uses v8 engine, mozilla firefox uses spider monkey
+
+javascript was initially created to "make web pages alive".
+
+The programs in this language are called scripts. They can be written right in a web page's HTML and run automatically as the page loads.

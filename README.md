@@ -202,7 +202,8 @@ Conditional statements are used to make decisions in code — they execute diffe
 let age = 18;
 if (age >= 18) {
   console.log("You are eligible to vote");
-}```
+}
+```
 
 `if...else` **statement**
    Used when you want to execute one block if the condition is true and another if it’s false.
@@ -212,7 +213,8 @@ if (age >= 18) {
   console.log("You can vote");
 } else {
   console.log("You are not eligible to vote");
-}```
+}
+```
 
 `if...else if...else` **statement**
    Used to check **multiple conditions** one by one.
@@ -224,4 +226,5 @@ if (marks >= 90) {
   console.log("Grade B");
 } else {
   console.log("Grade C");
-}```
+}
+```

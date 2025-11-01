@@ -1,84 +1,139 @@
-# javaScript
-What is javascript?
-scope in javascript
-course curriculum
+# JavaScript
 
-javascript is a high level multi-paradigm object-oriented programming language.
-It is also synchronous and single threaded in behaviour
+## What is JavaScript?
+JavaScript is a high-level, multi-paradigm, object-oriented programming language.  
+It is also synchronous and single-threaded in behaviour.  
 It is the language of the web and is used to make web pages and web applications work dynamically.
-opportunities after javascript:
-1.frontend developer:
-Angular
-reactjs
-vuejs
-2.Backend developer:
-nodejs
-3.Mobile application developer:
-reactjs
-ionic
 
-Topics that we will cover-
-1.Introduction to javascript
-2.The Basics
-3.Control structures and conditionals
-4.ES6
-5.Deep Diving into Functions
-6.OOPs in JS
-7.Functional Programming
-8.Asynchronous JS
-9.Miscellaneous
+---
 
-JavaScript on the Browser?
-Almost Every Browser today is Empowered by javascript,
+### Opportunities after JavaScript:
+1. **Frontend Developer:**
+   - Angular  
+   - ReactJS  
+   - VueJS  
 
-Every browser has an embedded javascript engine
-For ex-Chrome uses v8 engine, mozilla firefox uses spider monkey
+2. **Backend Developer:**
+   - NodeJS  
 
-javascript was initially created to "make web pages alive".
+3. **Mobile Application Developer:**
+   - ReactJS  
+   - Ionic  
 
-The programs in this language are called scripts. They can be written right in a web page's HTML and run automatically as the page loads.
+---
 
-What is Node.js
-Installing Node.js
-Running your code with Node.js
+## Course Curriculum
 
-What is Node.js?
-Node.js is an open-source, cross-platform, back-end javascript runtime environment that runs on the v8 engine and executes javascript code outside a web browser, which was designed to build scalable network applications, 
-It was  developed by Ryan Dahl and it uses chrome's v8 engine
-Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in javascript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+**Topics that we will cover:**
+1. Introduction to JavaScript  
+2. The Basics  
+3. Control Structures and Conditionals  
+4. ES6  
+5. Deep Diving into Functions  
+6. OOPs in JS  
+7. Functional Programming  
+8. Asynchronous JS  
+9. Miscellaneous  
 
-Variables in javascript:
-Variables are containers for storing data(storing data values).
-Variable means anything that can vary. In javascript, a variable stores the data value that can be changed later on.
-The var Keyword:
-There is a reserved keyword in javascript which is used to declare variables that is the 'var' keyword.
-Dynamically vs Statically typed languages:
-Statically tped languages: each variable and expression is already known at compile time.
-Dynamically typed languages: variables can receive different values at runtime and their type is defined at run time.
-Rules to declare a variable:
-All javascript variables must be identified with unique names.
-These unique names are called identifiers.
-Identifiers can be short names(like x and y) or more descriptive names(age,sum,totalVolume).
-The general rules for constructing names for variables(unique identifiers) are:
-*Names can contain letters, digits, underscored, and dollar signs.
-*Names must begin with a letter.
-*Names can also begin with $ and _ 
-*Names are case sensitive(y and Y are different variables).
-*Reserved words (like javascript keywords) cannot be used as names.
+---
 
-Arrays in Javascript:
-What are Arrays?
-Similar to a variable an array also stores data but it can store multiple data items.
-It enables storing multiple values under a same variable name and we can also perform operations on them by using different methods and properties also every value gets a sequential index starting from 0.
-In javascript arrays can store values of different data types whereas in statically typed languages arrays will store only that data types whereas in statically typed language arrays will store only that data by which the array is defined.
-Ex: var arr = [12, "Ferrai", true, 12,.4]
-//inbuilt js array methods
-var arr2 = [12,13,14,56]
-//pop method
-arr2.pop()
-arr2.push(100)
-arr2.shift() -removes first element
-arr2.unshift(102) -adds element at first
+## JavaScript on the Browser
+
+Almost every browser today is empowered by JavaScript.
+
+Every browser has an embedded JavaScript engine.  
+For example:  
+- Chrome uses **V8 engine**  
+- Mozilla Firefox uses **SpiderMonkey**
+
+JavaScript was initially created to **"make web pages alive"**.
+
+The programs in this language are called **scripts**.  
+They can be written right in a web page's HTML and run automatically as the page loads.
+
+---
+
+## What is Node.js?
+
+### Installing Node.js
+### Running your code with Node.js
+
+**Definition:**  
+Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.  
+It was designed to build scalable network applications.  
+
+It was developed by **Ryan Dahl** and uses **Chrome's V8 engine**.
+
+Node.js is an open-source, cross-platform runtime environment for developing server-side and networking applications.  
+Node.js applications are written in JavaScript and can be run within the Node.js runtime on macOS, Windows, and Linux.
+
+---
+
+## Variables in JavaScript
+
+Variables are **containers for storing data** (storing data values).  
+Variable means anything that can vary.  
+In JavaScript, a variable stores the data value that can be changed later on.
+
+### The `var` Keyword
+There is a reserved keyword in JavaScript which is used to declare variables — that is the `var` keyword.
+
+---
+
+### Dynamically vs Statically Typed Languages
+
+- **Statically typed languages:**  
+  Each variable and expression type is already known at compile time.
+
+- **Dynamically typed languages:**  
+  Variables can receive different values at runtime and their type is defined at run time.
+
+---
+
+### Rules to Declare a Variable
+
+All JavaScript variables must be identified with **unique names**.  
+These unique names are called **identifiers**.  
+
+Identifiers can be short names (like `x` and `y`) or more descriptive names (`age`, `sum`, `totalVolume`).
+
+**Rules for constructing names:**
+- Names can contain letters, digits, underscores, and dollar signs.  
+- Names must begin with a letter.  
+- Names can also begin with `$` or `_`.  
+- Names are case sensitive (`y` and `Y` are different variables).  
+- Reserved words (like JavaScript keywords) cannot be used as names.
+
+---
+
+## Arrays in JavaScript
+
+### What are Arrays?
+
+Similar to a variable, an array also stores data but it can store **multiple data items**.  
+It enables storing multiple values under the same variable name, and we can also perform operations on them using different methods and properties.  
+Every value gets a sequential index starting from **0**.
+
+In JavaScript, arrays can store values of different data types.  
+Whereas in statically typed languages, arrays store only the data type with which the array is defined.
+
+**Example:**
+```javascript
+var arr = [12, "Ferrari", true, 12.4];
+var arr2 = [12, 13, 14, 56];
+
+// pop() method
+arr2.pop();
+
+// push() method
+arr2.push(100);
+
+// shift() - removes first element
+arr2.shift();
+
+// unshift() - adds element at first
+arr2.unshift(102);
+
 
 Objects in javascript:
 Introduction to javascript objects?

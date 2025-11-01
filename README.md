@@ -196,16 +196,14 @@ pincode:123456
 Conditional statements are used to make decisions in code — they execute different blocks of code based on certain conditions.
 1. `if` **statement**
    Used to run a block of code **only if** a specified condition is `true.`
-   ```
-   let age = 18;
-if (age >= 18) {
+   ```let age = 18;
+   if (age >= 18) {
   console.log("You are eligible to vote");
 }
 ```
 2. `if...else` **statement**
    Used when you want to execute one block if the condition is true and another if it’s false.
-   ```
-   let age = 16;
+   ```let age = 16;
 if (age >= 18) {
   console.log("You can vote");
 } else {

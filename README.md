@@ -193,8 +193,6 @@ pincode:123456
 
 ### Conditional Statements(if, else, else-if)
 
-## Conditional Statements in JavaScript
-
 Conditional statements are used to make decisions in code — they execute different blocks of code based on certain conditions.
 1.`if` **statements**
 Used to run a block of code **only if** a specified condition is `true`.

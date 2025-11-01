@@ -132,7 +132,7 @@ arr2.push(100);
 arr2.shift();
 
 // unshift() - adds element at first
-arr2.unshift(102);
+arr2.unshift(102);```
 
 
 Objects in javascript:

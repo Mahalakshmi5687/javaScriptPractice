@@ -230,3 +230,8 @@ if (marks >= 90) {
   console.log("Grade C");
 }
 ```
+---
+
+### Control Statements
+
+loops are the statements that we can use to control a flow of the progress and to do some repetative.

@@ -208,7 +208,8 @@ if (age >= 18) {
 `if...else` **statement**
 - Used when you want to execute one block if the condition is true and another if it’s false.
 
-```let age = 16;
+```javascript
+let age = 16;
 if (age >= 18) {
   console.log("You can vote");
 } else {
@@ -219,7 +220,8 @@ if (age >= 18) {
 `if...else if...else` **statement**
 - Used to check **multiple conditions** one by one.
 
-```let marks = 85;
+```javascript
+let marks = 85;
 if (marks >= 90) {
   console.log("Grade A");
 } else if (marks >= 75) {

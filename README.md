@@ -193,30 +193,24 @@ pincode:123456
 
 ### Conditional Statements(if, else, else-if)
 
+## Conditional Statements in JavaScript
+
 Conditional statements are used to make decisions in code — they execute different blocks of code based on certain conditions.
-1. `if` **statement**
-   Used to run a block of code **only if** a specified condition is `true.`
-   ```let age = 18;
+
+---
+
+### 1. `if` statement
+
+Used to run a block of code **only if** a specified condition is `true`.
+
+**Key Points:**
+- Evaluates a single condition.  
+- Executes the code block only when the condition is true.  
+- If the condition is false, the block is skipped.
+
+```javascript
+let age = 18;
 if (age >= 18) {
   console.log("You are eligible to vote");
-}```
-2. `if...else` **statement**
-   Used when you want to execute one block if the condition is true and another if it’s false.
-  ```let age = 16;
-if (age >= 18) {
-  console.log("You can vote");
-} else {
-  console.log("You are not eligible to vote");
-}
-```
-3. `if...else if...else` **statement**
-   Used to check **multiple conditions** one by one.
-   ```let marks = 85;
-if (marks >= 90) {
-  console.log("Grade A");
-} else if (marks >= 75) {
-  console.log("Grade B");
-} else {
-  console.log("Grade C");
 }```
 

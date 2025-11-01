@@ -174,9 +174,3 @@ console.log(person.firstName);
 //bracket notation:
 person['age'7u]
 ```
-| Browser | Engine Name |
-|----------|--------------|
-| Chrome | V8 |
-| Firefox | SpiderMonkey |
-| Safari | JavaScriptCore (Nitro) |
-| Edge | Chakra |

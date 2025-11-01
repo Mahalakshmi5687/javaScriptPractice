@@ -136,17 +136,30 @@ arr2.unshift(102);
 ```
 
 
-Objects in javascript:
-Introduction to javascript objects?
-In javascript, an object is an unordered collection of key-value pairs. Each key-value is called a property.
-The key of a property can be a string. And the value of a property can be any value, e.g., a string, a number, an array, and even a function.
-Javascript provides you with many ways to create an object. The most commonly used one is to use the object literal notation.
-Initializing an object with object literal notation:
-Every other object in javascript describes a different entity with its properties.
-var person={
-firstName:"",
-lastName:"",
-age:50
+## Objects in JavaScript
+
+### Introduction to JavaScript Objects
+
+In JavaScript, an **object** is an unordered collection of **key-value pairs**.  
+Each key-value is called a **property**.  
+
+The **key** of a property can be a string.  
+The **value** of a property can be any value, e.g., a string, a number, an array, and even a function.  
+
+JavaScript provides you with many ways to create an object.  
+The most commonly used one is to use the **object literal notation**.
+
+---
+
+### Initializing an Object with Object Literal Notation
+
+Every other object in JavaScript describes a different entity with its properties.
+
+```javascript
+var person = {
+  firstName: "",
+  lastName: "",
+  age: 50
 };
 //in Js objects are in key value pair
 var person={
@@ -160,3 +173,4 @@ accessing values froom object:
 console.log(person.firstName);
 //bracket notation:
 person['age'7u]
+```

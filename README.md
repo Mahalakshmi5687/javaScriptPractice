@@ -234,4 +234,63 @@ if (marks >= 90) {
 
 ### Control Statements
 
-loops are the statements that we can use to control a flow of the progress and to do some repetative.
+#### for Loop
+- `for` **loops** are used to **run a block of code repeatedly** for a specific number of times — until a given condition becomes false.
+##### Syntax:
+
+```javascript
+for (initialization; condition; increment/decrement) {
+  // Code to be executed in each iteration
+}
+```
+##### Explanation:
+**Initialization** – Runs once before the loop starts (used to set a counter variable).
+**Condition** – Checked before every iteration; if `true`, the loop runs.
+**Increment/Decrement** – Updates the counter variable after each iteration.
+##### Example 1: Simple for loop
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+  console.log("Count:", i);
+}
+```
+##### Example 2: Looping through an array
+
+```javascript
+let fruits = ["Apple", "Banana", "Cherry"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+```
+##### Example 3: Using `break` and `continue`
+- `break` → Exits the loop completely.
+- `continue` → Skips the current iteration and moves to the next one.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue; // Skip 3
+  }
+  if (i === 5) {
+    break; // Stop the loop
+  }
+  console.log(i);
+}
+```
+##### Using for...in loop (for objects)
+- The `for...in` loop is used to **iterate over the keys (properties)** of an object.
+
+```javascript
+let person = {
+  name: "John",
+  age: 25,
+  city: "New York"
+};
+
+for (let key in person) {
+  console.log(key + ":", person[key]);
+}
+```
+- `key` → holds each property name (like `name`, `age`, `city`).
+- `person[key]` → gives the corresponding value.
